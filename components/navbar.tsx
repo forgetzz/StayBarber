@@ -36,7 +36,7 @@ export const Navbar = () => {
   // Auto-close NavbarMenu on route change
   useEffect(() => {
     const toggle = document.querySelector(
-      '[data-slot="navbar-menu-toggle"]'
+      '[data-slot="navbar-menu-toggle"]',
     ) as HTMLElement;
     if (toggle && window.innerWidth < 1024) {
       toggle.click();
@@ -82,7 +82,7 @@ export const Navbar = () => {
                 href={item.href}
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
               >
                 {item.label}
@@ -148,8 +148,8 @@ export const Navbar = () => {
                   index === 2
                     ? "primary"
                     : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
+                      ? "danger"
+                      : "foreground"
                 }
               >
                 {item.label}

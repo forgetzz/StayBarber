@@ -1,31 +1,35 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import CameraCapture from '@/components/ui/CameraCapture'
+import React, { useState } from "react";
+import CameraCapture from "@/components/ui/CameraCapture";
 
 const hairstyleSuggestions: Record<string, string[]> = {
-  Undercut: ['Side Part Undercut', 'Textured Undercut', 'Disconnected Undercut'],
-  Pompadour: ['Classic Pompadour', 'Modern Pompadour', 'Faded Pompadour'],
-  Buzzcut: ['Military Cut', 'Induction Cut', 'Crew Cut'],
-  Mullet: ['Modern Mullet', 'Shaggy Mullet', 'Tapered Mullet'],
-}
+  Undercut: [
+    "Side Part Undercut",
+    "Textured Undercut",
+    "Disconnected Undercut",
+  ],
+  Pompadour: ["Classic Pompadour", "Modern Pompadour", "Faded Pompadour"],
+  Buzzcut: ["Military Cut", "Induction Cut", "Crew Cut"],
+  Mullet: ["Modern Mullet", "Shaggy Mullet", "Tapered Mullet"],
+};
 
 export default function HairDetect() {
-  const [result, setResult] = useState<string | null>(null)
-  const [loading, setLoading] = useState(false)
+  const [result, setResult] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const detectHairStyle = async (img: string) => {
-    setLoading(true)
-    setResult(null)
+    setLoading(true);
+    setResult(null);
 
     // Simulasi hasil deteksi AI
     setTimeout(() => {
-      setResult('Undercut') // Ganti dengan hasil dari model AI kamu
-      setLoading(false)
-    }, 2000)
-  }
+      setResult("Undercut"); // Ganti dengan hasil dari model AI kamu
+      setLoading(false);
+    }, 2000);
+  };
 
-  const recommendations = result ? hairstyleSuggestions[result] ?? [] : []
+  const recommendations = result ? (hairstyleSuggestions[result] ?? []) : [];
 
   return (
     <div className="p-6 space-y-6 max-w-md mx-auto text-center">
@@ -49,5 +53,5 @@ export default function HairDetect() {
         </div>
       )}
     </div>
-  )
+  );
 }

@@ -42,7 +42,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div >
+          <div>
             <Navbar />
             <main className="container mx-auto max-w-7xl pt-5 px-6 flex-grow">
               {children}

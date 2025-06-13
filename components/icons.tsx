@@ -188,7 +188,6 @@ export const SearchIcon = (props: IconSvgProps) => (
 
 // components/icons/InstagramIcon.tsx
 
-
 export const InstagramIcon = (props: IconSvgProps) => (
   <svg
     aria-hidden="true"
@@ -216,13 +215,6 @@ export const InstagramIcon = (props: IconSvgProps) => (
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle
-      cx="17.5"
-      cy="6.5"
-      r="0.8"
-      fill="currentColor"
-    />
+    <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
   </svg>
 );
-
-

@@ -5,8 +5,8 @@ import { TypewriterEffet } from "@/components/TextGenerate";
 export default function DocsPage() {
   return (
     <div>
-           <TypewriterEffet/>
-           <HairDetect />
+      <TypewriterEffet />
+      <HairDetect />
     </div>
   );
 }

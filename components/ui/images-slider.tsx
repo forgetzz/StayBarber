@@ -27,13 +27,13 @@ export const ImagesSlider = ({
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+      prevIndex + 1 === images.length ? 0 : prevIndex + 1,
     );
   };
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -94,10 +94,10 @@ export const ImagesSlider = ({
       scale: 1,
       rotateX: 0,
       opacity: 1,
-    transition: {
-  duration: 0.6,
-  ease: cubicBezier(0.42, 0, 0.58, 1) // ✅ Valid
-}
+      transition: {
+        duration: 0.6,
+        ease: cubicBezier(0.42, 0, 0.58, 1), // ✅ Valid
+      },
     },
     upExit: {
       opacity: 1,
@@ -121,7 +121,7 @@ export const ImagesSlider = ({
     <div
       className={cn(
         "overflow-hidden h-full w-full relative flex items-center justify-center",
-        className
+        className,
       )}
       style={{
         perspective: "1000px",

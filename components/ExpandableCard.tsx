@@ -6,7 +6,7 @@ import { useOutsideClick } from "../components/ui/use-outside-click";
 
 export function ExpandableCard() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
+    null,
   );
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -213,7 +213,10 @@ const cards = [
     content: () => {
       return (
         <p>
-    Sebagai pendiri StayBarberShop, Fajrin membawa visi modern dalam dunia barber dengan menggabungkan gaya klasik dan tren terkini. Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
+          Sebagai pendiri StayBarberShop, Fajrin membawa visi modern dalam dunia
+          barber dengan menggabungkan gaya klasik dan tren terkini.
+          Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong
+          rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
         </p>
       );
     },
@@ -227,7 +230,10 @@ const cards = [
     content: () => {
       return (
         <p>
- Sebagai talent StayBarberShop, Fajrin membawa visi modern dalam dunia barber dengan menggabungkan gaya klasik dan tren terkini. Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
+          Sebagai talent StayBarberShop, Fajrin membawa visi modern dalam dunia
+          barber dengan menggabungkan gaya klasik dan tren terkini.
+          Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong
+          rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
         </p>
       );
     },
@@ -241,7 +247,10 @@ const cards = [
     content: () => {
       return (
         <p>
-    Sebagai talent StayBarberShop, Fajrin membawa visi modern dalam dunia barber dengan menggabungkan gaya klasik dan tren terkini. Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
+          Sebagai talent StayBarberShop, Fajrin membawa visi modern dalam dunia
+          barber dengan menggabungkan gaya klasik dan tren terkini.
+          Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong
+          rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
         </p>
       );
     },
@@ -255,10 +264,12 @@ const cards = [
     content: () => {
       return (
         <p>
- Sebagai talent StayBarberShop, Fajrin membawa visi modern dalam dunia barber dengan menggabungkan gaya klasik dan tren terkini. Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
+          Sebagai talent StayBarberShop, Fajrin membawa visi modern dalam dunia
+          barber dengan menggabungkan gaya klasik dan tren terkini.
+          Kepemimpinannya menjadikan StayBarberShop bukan hanya tempat potong
+          rambut, tapi juga ruang kreatif untuk mengekspresikan gaya.
         </p>
       );
     },
   },
-
 ];
