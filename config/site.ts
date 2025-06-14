@@ -36,19 +36,19 @@ export const siteConfig = {
     },
     {
       label: "Galery",
-      href: "/about",
+      href: "/galery",
     },
     {
       label: "Team",
       href: "/team",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Customer",
+      href: "/HairRecord",
     },
     {
-      label: "Settings",
-      href: "/settings",
+      label: "Sertifikat",
+      href: "/Sertifikat",
     },
     {
       label: "Kontak",

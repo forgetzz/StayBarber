@@ -39,11 +39,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
+          Perjalanan Karir StayBarber
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+        Dari Gunting Pertama, Hingga Gaya yang Membentuk Percaya Diri.
+
+StayBarber lahir dari mimpi sederhana: menciptakan tempat cukur yang bukan sekadar potong rambut, tapi ruang untuk membentuk identitas dan percaya diri.
+Berawal dari kursi dan cermin di sudut kecil kota, kami memulai perjalanan dengan satu prinsip: setiap gaya rambut punya cerita.
         </p>
       </div>
 

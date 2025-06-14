@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/logo.jpeg",
   },
 };
 
@@ -52,7 +52,7 @@ export default function RootLayout({
                 isExternal
                 className="flex items-center gap-1 text-current"
                 href="https://github.com/forgetzz"
-                title="heroui.com homepage"
+                title="Forgetzz"
               >
                 <span className="text-default-600">Powered by</span>
                 <p className="text-primary">DevPunk</p>
