@@ -5,7 +5,7 @@ export default function HairRecordPage() {
   return (
     <div>
       <h1 className={title()}>Hair Record Customer</h1>
-      <Customer/>
+      <Customer />
     </div>
   );
 }

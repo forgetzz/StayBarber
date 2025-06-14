@@ -1,6 +1,6 @@
 "use client";
 
-import {Carousel} from "./ui/carousel";
+import { Carousel } from "./ui/carousel";
 export function Sertifikat() {
   const slideData = [
     {
@@ -18,7 +18,6 @@ export function Sertifikat() {
     {
       src: "/images/ser.jpg",
     },
-   
   ];
   return (
     <div className="relative overflow-hidden w-full h-full py-20">

@@ -16,5 +16,4 @@ const images = [
   "/images/9.png",
   "/images/10.png",
   "/images/11.png",
-
 ];

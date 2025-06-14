@@ -32,7 +32,9 @@ export function ImagesSliderDemo() {
         </motion.p>
         <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
           <span>
-            <Link href="https://wa.me/6287820151882?text=Nama%3A%20%0AJam%20Datang%3A%20 ">Daftar disini →</Link>
+            <Link href="https://wa.me/6287820151882?text=Nama%3A%20%0AJam%20Datang%3A%20 ">
+              Daftar disini →
+            </Link>
           </span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>

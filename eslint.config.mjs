@@ -102,8 +102,8 @@ export default defineConfig([
       "prettier/prettier": "warn",
       "no-unused-vars": "off",
       "unused-imports/no-unused-vars": "off",
-        "react/jsx-sort-props": "off",
-  "jsx-a11y/media-has-caption": "off",
+      "react/jsx-sort-props": "off",
+      "jsx-a11y/media-has-caption": "off",
 
       "@typescript-eslint/no-unused-vars": [
         "warn",

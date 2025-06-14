@@ -15,7 +15,8 @@ interface SlideProps {
 }
 
 const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
-  const slideRef = useRef<HTMLLIElement>(null);
+ const slideRef = useRef<HTMLButtonElement>(null); // ✅ BENAR
+
 
   const xRef = useRef(0);
   const yRef = useRef(0);
@@ -65,17 +66,12 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
-    <li
+    <button
   ref={slideRef}
   className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10"
-  role="button"
-  tabIndex={0}
   onClick={() => handleSlideClick(index)}
-  onKeyDown={(e) => {
-    if (e.key === "Enter") handleSlideClick(index);
-  }}
-  onMouseLeave={handleMouseLeave}
   onMouseMove={handleMouseMove}
+  onMouseLeave={handleMouseLeave}
   style={{
     transform:
       current !== index ? "scale(0.98) rotateX(8deg)" : "scale(1) rotateX(0deg)",
@@ -93,12 +89,12 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     }}
   >
     <img
-      src={src}
-      alt="" // Tambahkan alt, bisa juga "Slide image" jika ingin lebih deskriptif
       className="absolute inset-0 w-[120%] h-[100%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
       style={{
         opacity: current === index ? 1 : 0.5,
       }}
+      src={src}
+      alt={`Slide ${index}`}
       onLoad={imageLoaded}
       loading="eager"
       decoding="sync"
@@ -113,9 +109,9 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
       current === index ? "opacity-100 visible" : "opacity-0 invisible"
     }`}
   >
-    <div className="flex justify-center">{/* Optional content */}</div>
+    <div className="flex justify-center">{/* Konten opsional */}</div>
   </article>
-</li>
+</button>
 
     </div>
   );

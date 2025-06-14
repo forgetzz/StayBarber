@@ -42,10 +42,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Perjalanan Karir StayBarber
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-        Dari Gunting Pertama, Hingga Gaya yang Membentuk Percaya Diri.
-
-StayBarber lahir dari mimpi sederhana: menciptakan tempat cukur yang bukan sekadar potong rambut, tapi ruang untuk membentuk identitas dan percaya diri.
-Berawal dari kursi dan cermin di sudut kecil kota, kami memulai perjalanan dengan satu prinsip: setiap gaya rambut punya cerita.
+          Dari Gunting Pertama, Hingga Gaya yang Membentuk Percaya Diri.
+          StayBarber lahir dari mimpi sederhana: menciptakan tempat cukur yang
+          bukan sekadar potong rambut, tapi ruang untuk membentuk identitas dan
+          percaya diri. Berawal dari kursi dan cermin di sudut kecil kota, kami
+          memulai perjalanan dengan satu prinsip: setiap gaya rambut punya
+          cerita.
         </p>
       </div>
 

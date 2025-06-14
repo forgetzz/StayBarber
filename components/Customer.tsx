@@ -28,7 +28,9 @@ export function Customer() {
               height={500}
               className="rounded-2xl "
             />
-                <p className="inline-block border border-gray-400 text-gray-800 mt-1 px-4 py-1 rounded-full font-bold hover:bg-gray-800 hover:text-white transition-all">Lihat</p>
+            <p className="inline-block border border-gray-400 text-gray-800 mt-1 px-4 py-1 rounded-full font-bold hover:bg-gray-800 hover:text-white transition-all">
+              Lihat
+            </p>
           </span>
         </ModalTrigger>
         <ModalBody>
@@ -38,7 +40,6 @@ export function Customer() {
               <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
                 Cukur Rasul
               </span>{" "}
-             
             </h4>
             <div className="flex justify-center items-center">
               {images.map((image, idx) => (
@@ -57,20 +58,12 @@ export function Customer() {
                     rotate: 0,
                     zIndex: 100,
                   }}
-
                 >
-                  <img
-                    src={image}
-                    alt="bali "
-                    width="9000"
-                    height="900"
-
-                  />
+                  <img src={image} alt="bali " width="9000" height="900" />
                 </motion.div>
               ))}
             </div>
             <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-        
               <div className="flex  items-center justify-center">
                 <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
@@ -103,7 +96,9 @@ export function Customer() {
               height={500}
               className="rounded-2xl "
             />
-                <p className="inline-block border border-gray-400 text-gray-800 mt-1 px-4 py-1 rounded-full font-bold hover:bg-gray-800 hover:text-white transition-all">Lihat</p>
+            <p className="inline-block border border-gray-400 text-gray-800 mt-1 px-4 py-1 rounded-full font-bold hover:bg-gray-800 hover:text-white transition-all">
+              Lihat
+            </p>
           </span>
         </ModalTrigger>
         <ModalBody>
@@ -113,7 +108,6 @@ export function Customer() {
               <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
                 Cukur Rasul
               </span>{" "}
-             
             </h4>
             <div className="flex justify-center items-center">
               {images.map((image, idx) => (
@@ -132,20 +126,17 @@ export function Customer() {
                     rotate: 0,
                     zIndex: 100,
                   }}
-
                 >
                   <img
                     src={image}
                     alt="bali images"
                     width="9000"
                     height="900"
-
                   />
                 </motion.div>
               ))}
             </div>
             <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-        
               <div className="flex  items-center justify-center">
                 <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
@@ -168,7 +159,6 @@ export function Customer() {
           </ModalContent>
         </ModalBody>
       </Modal>
-  
     </div>
   );
 }

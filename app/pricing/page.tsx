@@ -5,14 +5,14 @@ export default function PricingPage() {
     <div>
       <h1 className={title()}>StayBarber Games</h1>
       <iframe
-  src="https://github.tanchangwen.com/react-tetris/"
-   title="StayBarber Location Map"
-  width="100%"
-  height="300"
-  style={{ border: 0 }}
-  allowFullScreen
-  loading="lazy"
-></iframe>
+        src="https://github.tanchangwen.com/react-tetris/"
+        title="StayBarber Location Map"
+        width="100%"
+        height="300"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+      ></iframe>
     </div>
   );
 }

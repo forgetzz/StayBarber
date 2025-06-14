@@ -29,13 +29,8 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * third);
 
   return (
-    <div
-      ref={gridRef}
-    >
-      <div
-        className="grid  mx-auto gap-10 py-40 px-10"
-        ref={gridRef}
-      >
+    <div ref={gridRef}>
+      <div className="grid  mx-auto gap-10 py-40 px-10" ref={gridRef}>
         <div className="grid gap-10">
           {firstPart.map((el, idx) => (
             <motion.div

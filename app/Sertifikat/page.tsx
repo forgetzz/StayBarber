@@ -5,7 +5,7 @@ export default function SertifikatPage() {
   return (
     <div>
       <h1 className={title()}>Sertifikat Kami</h1>
-      <Sertifikat/>
+      <Sertifikat />
     </div>
   );
 }
