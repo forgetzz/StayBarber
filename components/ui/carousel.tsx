@@ -65,57 +65,58 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
-      <li
-        ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 "
-        onClick={() => handleSlideClick(index)}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          transform:
-            current !== index
-              ? "scale(0.98) rotateX(8deg)"
-              : "scale(1) rotateX(0deg)",
-          transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
-          transformOrigin: "bottom",
-        }}
-      >
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
-          style={{
-            transform:
-              current === index
-                ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
-                : "none",
-          }}
-        >
-          <img
-            className="absolute inset-0 w-[120%] h-[100%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
-            style={{
-              opacity: current === index ? 1 : 0.5,
-            }}
-        
-            src={src}
-            onLoad={imageLoaded}
-            loading="eager"
-            decoding="sync"
-          />
-          {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
-          )}
-        </div>
+    <li
+  ref={slideRef}
+  className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10"
+  role="button"
+  tabIndex={0}
+  onClick={() => handleSlideClick(index)}
+  onKeyDown={(e) => {
+    if (e.key === "Enter") handleSlideClick(index);
+  }}
+  onMouseLeave={handleMouseLeave}
+  onMouseMove={handleMouseMove}
+  style={{
+    transform:
+      current !== index ? "scale(0.98) rotateX(8deg)" : "scale(1) rotateX(0deg)",
+    transformOrigin: "bottom",
+    transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+  }}
+>
+  <div
+    className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+    style={{
+      transform:
+        current === index
+          ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
+          : "none",
+    }}
+  >
+    <img
+      src={src}
+      alt="" // Tambahkan alt, bisa juga "Slide image" jika ingin lebih deskriptif
+      className="absolute inset-0 w-[120%] h-[100%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+      style={{
+        opacity: current === index ? 1 : 0.5,
+      }}
+      onLoad={imageLoaded}
+      loading="eager"
+      decoding="sync"
+    />
+    {current === index && (
+      <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
+    )}
+  </div>
 
-        <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
-            current === index ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-        >
-     
-          <div className="flex justify-center">
-        
-          </div>
-        </article>
-      </li>
+  <article
+    className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
+      current === index ? "opacity-100 visible" : "opacity-0 invisible"
+    }`}
+  >
+    <div className="flex justify-center">{/* Optional content */}</div>
+  </article>
+</li>
+
     </div>
   );
 };

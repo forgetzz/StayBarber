@@ -23,7 +23,7 @@ export function Customer() {
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
             <img
               src="/images/rasul2.jpeg"
-              alt="image"
+              alt="halo"
               width={500}
               height={500}
               className="rounded-2xl "
@@ -61,7 +61,7 @@ export function Customer() {
                 >
                   <img
                     src={image}
-                    alt="bali images"
+                    alt="bali "
                     width="9000"
                     height="900"
 
@@ -98,7 +98,7 @@ export function Customer() {
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
             <img
               src="/images/rasul2.jpeg"
-              alt="image"
+              alt="halo"
               width={500}
               height={500}
               className="rounded-2xl "
