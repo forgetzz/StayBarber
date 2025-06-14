@@ -207,9 +207,9 @@ const cards = [
   {
     description: "Fajrin",
     title: "Owner",
-    src: "../images/logo.jpeg",
+    src: "../images/fajrin.jpeg",
     ctaText: "Baca Selengkapnya",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.instagram.com/fajrincs_?igsh=MWZoeW1maGM5ZmUzNA==",
     content: () => {
       return (
         <p>
@@ -223,10 +223,10 @@ const cards = [
   },
   {
     description: "Akbar",
-    title: "Talents1",
-    src: "../images/logo.jpeg",
+    title: "Guest star II",
+    src: "../images/bams.jpeg",
     ctaText: "Baca Selengkapnya",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.instagram.com/akbrndi?igsh=MXNraXFzc2xrN3k0bA==",
     content: () => {
       return (
         <p>
@@ -240,10 +240,10 @@ const cards = [
   },
   {
     description: "Irwan",
-    title: "Talents2",
-    src: "../images/logo.jpeg",
+    title: "Guest star III",
+    src: "../images/112.jpeg",
     ctaText: "Baca Selengkapnya",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.instagram.com/irwwaansyah?igsh=MTMyaWl1cGFhZXpkdA==",
     content: () => {
       return (
         <p>
@@ -257,10 +257,10 @@ const cards = [
   },
   {
     description: "Fadil",
-    title: "Talents3",
-    src: "../images/logo.jpeg",
+    title: "Guest star I",
+    src: "../images/113.jpeg",
     ctaText: "Baca Selengkapnya",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.instagram.com/m_f4adill?igsh=dm5pdDUyb3ppdGx5",
     content: () => {
       return (
         <p>

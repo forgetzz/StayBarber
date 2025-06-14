@@ -18,11 +18,11 @@ export const siteConfig = {
     },
     {
       label: "Blog",
-      href: "/blog",
+      href: "/",
     },
     {
       label: "About",
-      href: "/about",
+      href: "/",
     },
   ],
   navMenuItems: [
@@ -51,15 +51,15 @@ export const siteConfig = {
       href: "/Sertifikat",
     },
     {
-      label: "Kontak",
-      href: "/",
+      label: "Tetris game",
+      href: "/pricing",
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://www.instagram.com/staybarbershoop?igsh=YmZvaTd6eHVqdWVz",
+    twitter: "hi",
+    docs: "hm",
+    discord: "",
+    sponsor: "",
   },
 };
